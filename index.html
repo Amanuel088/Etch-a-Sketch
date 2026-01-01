@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch - Professional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Etch-a-Sketch Pro</h1>
+            <p class="subtitle">Choose a mode and start drawing!</p>
+        </header>
+        
+        <div class="controls">
+            <div class="control-group">
+                <button id="grid-size-btn" class="btn btn-primary">
+                    ✏️ Change Grid Size
+                </button>
+                <button id="clear-btn" class="btn btn-secondary">
+                    🧹 Clear Grid
+                </button>
+            </div>
+            
+            <div class="control-group">
+                <h3>Drawing Modes:</h3>
+                <div class="mode-buttons">
+                    <button id="mode-black" class="btn-mode active" data-mode="black">
+                        ● Black
+                    </button>
+                    <button id="mode-random" class="btn-mode" data-mode="random">
+                        🌈 Random Colors
+                    </button>
+                    <button id="mode-darken" class="btn-mode" data-mode="darken">
+                        ◑ Progressive Darkening
+                    </button>
+                    <button id="mode-eraser" class="btn-mode" data-mode="eraser">
+                        ✏️ Eraser
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid-info">
+                <div class="info-item">
+                    <span class="label">Grid Size:</span>
+                    <span id="current-size" class="value">16×16</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Current Mode:</span>
+                    <span id="current-mode" class="value">Black</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid-wrapper">
+            <div id="grid-container"></div>
+        </div>
+        
+        <footer>
+            <p class="instructions">
+                <strong>How to use:</strong> 
+                Select a drawing mode → Hover or click+drag over the grid → 
+                Change grid size anytime
+            </p>
+            <p class="hint">Pro Tip: Try the progressive darkening mode for shading effects!</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
